@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RevenueCat Customers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">RevenueCat Kontrol</p>
+          <h1>Customer Listesi</h1>
+          <p class="subtitle">Müşterileri hızla görüntüle, tek tek veya toplu sil.</p>
+        </div>
+        <div class="actions">
+          <button id="refresh" class="button secondary">Yenile</button>
+          <button id="delete-all" class="button danger">Tümünü Sil</button>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <div class="search-wrap">
+          <input id="search" class="input" type="search" placeholder="E-posta ile ara" />
+          <button id="apply-search" class="button ghost">Ara</button>
+        </div>
+        <div class="meta">
+          <span id="count">0 customer</span>
+          <span id="status" class="status">Hazır</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div id="empty" class="empty hidden">
+          <p>Henüz müşteri bulunamadı.</p>
+        </div>
+        <ul id="customer-list" class="list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
